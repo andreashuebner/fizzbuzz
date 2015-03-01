@@ -4,19 +4,21 @@
 
 import sys
 
-'''Function to raise exception
-@param {string} message - Message to show with exception
-'''
+
 def fail(message):
+    '''Function to raise exception
+    @param {string} message - Message to show with exception
+    '''
     raise Exception(message)
 
-'''Function to check whether a number is divisble by another number
-Throws exception if divident is 0 or if one of the parameters cannot be cast to int
-@param {int} divisor - The divisor
-@param {int} divident - The divident
-@return {boolean} Returns true if divisble, false if not
-'''
+
 def is_divisble(divisor,divident):
+    '''Function to check whether a number is divisble by another number
+    Throws exception if divident is 0 or if one of the parameters cannot be cast to int
+    @param {int} divisor - The divisor
+    @param {int} divident - The divident
+    @return {boolean} Returns true if divisble, false if not
+    '''
     try:
         divisor=int(divisor)
         dividient=int(divident)
